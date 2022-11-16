@@ -20,15 +20,16 @@ public class UserViewImp implements UserViewService{
 		
 		return userViewDAO.getByCaption(userView);
 	}
+
 	
 
-	@Override
-	public List<UserView> listIf(UserView userView) {     
-	    return userViewDAO.getIf(userView);
-	}
-
-@Override
-public List<UserView> listChoose(UserView userView) {     
-    return userViewDAO.getChoose(userView);
-}
+//	@Override
+//	public List<UserView> listIf(UserView userView) {     
+//	    return userViewDAO.getIf(userView);
+//	}
+//
+//	@Override
+//	public List<UserView> listChoose(UserView userView) {     
+//	    return userViewDAO.getChoose(userView);
+//	}
 }

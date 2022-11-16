@@ -16,17 +16,6 @@ public class UserViewController {
     UserViewService userViewService;
     
 
-
-	@RequestMapping(value = "/listDynamic", produces = "text/html;charset=utf-8")
-	public String listDynamic(UserView userView, Model model) {
-	    Result result = new Result();
-	    result.setCode(0);
-	    result.setMsg("查询成功");              
-	    List<UserView> userViews= userViewService.listIf(userView);
-	    result.setData(userViews);      
-	    model.addAttribute("result", result);
-	    return "listDynamic";
-	}
        
     // 数据库查询
     @RequestMapping(value = "/listView", produces = "text/html;charset=utf-8")
@@ -43,46 +32,7 @@ public class UserViewController {
     }
     
 
-	@RequestMapping(value = "/listDynamic", produces = "text/html;charset=utf-8")
-	public String listDynamic(UserView userView, Model model) {
-	    Result result = new Result();
-	    result.setCode(0);
-	    result.setMsg("查询成功");              
-	    List<UserView> userViews= userViewService.listChoose(userView);
-	    result.setData(userViews);      
-	    model.addAttribute("result", result);
-	    return "listDynamic";
-	}
-	
 
 
-	@RequestMapping(value = "/listDynamic", produces = "text/html;charset=utf-8")
-	public String listDynamic(@RequestParam("id") List list, Model model) {
-	    Result result = new Result();
-	    result.setCode(0);
-	    result.setMsg("查询成功");
-	    List<UserView> userViews = userViewService.listCollection(list);
-	    result.setData(userViews);
-	    model.addAttribute("result", result);
-	    return "listDynamic";
-	}
-	
 
-@RequestMapping(value = "/updateSet", produces = "text/html;charset=utf-8")
-public String updateSet(User user, Model model) {
-    Result result = new Result();
-    result.setCode(0);
-    result.setMsg("更新成功");
-    try {
-        userService.updateSet(user);            
-    } catch (Exception e) {
-        result.setCode(-1);
-        result.setMsg("更新失败");
-        e.printStackTrace();
-    }
-    result.setData(userService.listAll());      
-    model.addAttribute("user", user);
-    model.addAttribute("result", result);
-    return "listUpdateSet";
-}
 }
