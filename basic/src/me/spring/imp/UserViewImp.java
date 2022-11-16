@@ -14,14 +14,21 @@ public class UserViewImp implements UserViewService{
 	
     @Autowired
     UserViewDAO userViewDAO;
+    
 	@Override
 	public List<UserView> listSome(UserView userView) {
 		
 		return userViewDAO.getByCaption(userView);
 	}
+	
+
 	@Override
-	public List<UserView> listIf(UserView userView) {
-		// TODO Auto-generated method stub
-		return userViewDAO.getIf(userView);
-	} 
+	public List<UserView> listIf(UserView userView) {     
+	    return userViewDAO.getIf(userView);
+	}
+
+@Override
+public List<UserView> listChoose(UserView userView) {     
+    return userViewDAO.getChoose(userView);
+}
 }

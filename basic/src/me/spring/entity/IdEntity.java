@@ -1,4 +1,3 @@
-
 package me.spring.entity;
 import java.io.Serializable;
 /**
