@@ -28,9 +28,9 @@
         <br>
         用户昵称：<input type="text" placeholder="用户昵称">
         <br>
-        登录密码：<input type="password" placeholder="密码">
+        登录密码：<input type="password" placeholder="密码" >
         <br>
-        密码确认：<input type="text" placeholder="密码确认">
+        密码确认：<input type="password" placeholder="密码确认">
         <br>
         联系方式：<input type="text" placeholder="联系方式">
         <br>
@@ -48,7 +48,7 @@
 
       </div>
 
-      <script src="" ${basePath}/js/main.js"></script>
+      <script src="${basePath}/js/main.js"></script>
     </body>
 
     </html>

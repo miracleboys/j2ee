@@ -28,7 +28,8 @@ uri="http://java.sun.com/jsp/jstl/core" %>
       <h2>用户登录</h2>
       登录名称：<input type="text" placeholder="用户名称" path="sss">
       <br>
-      登录密码：<input type="password" placeholder="密码">
+      登录密码：<input type="password" placeholder="密码" id="pwd">
+      <img src="${basePath}/images/close.png" id="eye" onclick="watch()">
       <br>
       <button><a href="${basePath}/users/signUp" target="_blank">注册</a></button>
       <button type="submit">登录</button>
@@ -44,11 +45,6 @@ uri="http://java.sun.com/jsp/jstl/core" %>
   </div>
 
  
-
- 
-
-   <!-- <span class="message">反馈信息</span>
-   <span class="message_${result.code}">${result.msg}</span> -->
-   <script src=""${basePath}/js/main.js"></script>
+   <script src="${basePath}/js/main.js"></script>
   </body>
 </html>

@@ -114,6 +114,14 @@ a{
     color: #FFFFFF;
 }
 
+img{
+    position: absolute;
+    top: 160px;
+    width: 30px;
+    height: 30px;
+    
+}
+
 .login-form button::before,
 .login-form button::after {
     content: "";
