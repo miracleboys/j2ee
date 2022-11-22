@@ -22,8 +22,7 @@ uri="http://java.sun.com/jsp/jstl/core" %>
   <body>
 
   <div class="container">
-
- 
+    <h1 id="web_name">绿 野 房 源 网</h1>
     <form action="#" class="login-form">
       <h2>用户登录</h2>
       登录名称：<input type="text" placeholder="用户名称" path="sss">

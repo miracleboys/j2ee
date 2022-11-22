@@ -20,8 +20,7 @@
     <body>
 
       <div class="container">
-
-      
+      <h1 id="web_name">绿野房源网</h1>
       <form action="#" class="login-form">
         <h2>用户注册</h2>
         登录名称：<input type="text" placeholder="用户名称">
