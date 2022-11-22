@@ -64,7 +64,7 @@ html body {
     color: #3d5245;
 }
 
-.login-form input {
+.ins {
     width: 210px;
     margin: 5px 0;
     height: 45px;
@@ -75,12 +75,13 @@ html body {
     color: #3d5245;
 }
 
-.login-form input::placeholder {
+
+.login-form .ins::placeholder {
     color: #3d5245;
 }
 
 .login-form button:focus,
-.login-form input:focus {
+.login-form .ins:focus {
     outline: 0;
 }
 
