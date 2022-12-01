@@ -24,5 +24,17 @@ public class UserImp implements UserService{
 	public int add(User user) {
 		return userDAO.insert(user);
 	}
+
+	@Override
+	public int setUserRole(User user) {
+		
+		return userDAO.roleInsert(user);
+	}
+
+	@Override
+	public List<User> find(User user) {
+		
+		return userDAO.userSignIn(user);
+	}
 	 
 }

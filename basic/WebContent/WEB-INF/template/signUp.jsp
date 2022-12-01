@@ -32,7 +32,7 @@
      
       <form:form name="dataForm" class="login-form" method="post" modelAttribute="user" action="${basePath}/users/add">
         <h2>用户注册</h2>
-        登录名称：<form:input type="text" placeholder="用户名称"  path="username" class="ins"/>
+        登录名称：<form:input type="text" placeholder="登录名称"  path="username" class="ins"/>
         <br>
         用户昵称：<form:input type="text" placeholder="用户昵称" path="caption" class="ins"/>
         <br>
@@ -42,19 +42,13 @@
         <br>
         联系方式：<form:input type="text" placeholder="联系方式" path="telephone" class="ins"/>
         <br>
-        <input type="submit" value="sss">
         <button onclick="saveSubmit('add')">注册</button>
         <button><a href="${basePath}/users/signIn" target="_blank">返回</a></button>
         <br>
         <span class="message">反馈信息</span>
-        <span class="message_${result.code}">${result.msg}</span>
+        <span class="message_${result.code} message_in">${result.msg}</span>
       </form:form>
-    </div>
-
-   
-      </div>
-
-
+      
       </div>
 
       <script src="${basePath}/js/main.js"></script>
